@@ -5,6 +5,9 @@ def quicksort(l):
     if n > 1:
         pivot_index = random.randint(0,n-1)
         pivot = l[pivot_index]
+        
+        print ("Pivoting", l[pivot_index], "in", l)
+       
         left = []
         right = []
         pivot_clones = [pivot]
@@ -17,16 +20,8 @@ def quicksort(l):
                 right.append(l[i])
             else: 
                 pivot_clones.append(l[i])
+
+        print ("Left becomes", left, "; right becomes", right)
+        
         return quicksort(left) + pivot_clones + quicksort(right)
     return l
-
-x = [2,3,1]
-print quicksort(x)
-x = [3,2,1]
-print quicksort(x)
-x = [1,2,3]
-print quicksort(x)
-x = [0, -1]
-print quicksort(x)
-x = [0,0]
-print quicksort(x)

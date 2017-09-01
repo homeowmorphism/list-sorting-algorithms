@@ -3,8 +3,7 @@ def insertion_sort(l):
     if n > 1:
         i = 1 
         while i < n:
-            print l
-            print ":"
+            print ("Inserting", l[i], "into", l)
             j = i
             while j > 0:
                 if l[j] < l[j-1]:
@@ -16,7 +15,3 @@ def insertion_sort(l):
                 print l
             i += 1
             print "---"
-
-l = [4,3,2,1]
-insertion_sort(l)
-print l
