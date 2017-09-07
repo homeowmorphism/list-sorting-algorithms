@@ -26,3 +26,6 @@ def mergesort(l):
             j += 1
             k += 1 
     print l 
+
+print "---"
+print l

@@ -25,3 +25,5 @@ def quicksort(l):
         
         return quicksort(left) + pivot_clones + quicksort(right)
     return l
+
+print("Result", quicksort(l))

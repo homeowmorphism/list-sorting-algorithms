@@ -15,3 +15,4 @@ def insertion_sort(l):
                 print l
             i += 1
             print "---"
+    print("Result", l)
