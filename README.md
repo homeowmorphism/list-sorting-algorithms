@@ -31,11 +31,10 @@ brew install pytest
 pip install hypothesis
 ```
 
-If everything works correctly you should be able ot type 
+If everything works correctly you should be able to type the following command without any errors. 
 
 ```
 pytest test.py
 ```
-without any errors. 
 
 
